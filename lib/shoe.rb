@@ -14,6 +14,10 @@ class Shoe
   end
 
   def brand=(brand)
+    if BRANDS.include?(brand)
+    else
+      BRANDS << brand
+    end
   end
 
 end
